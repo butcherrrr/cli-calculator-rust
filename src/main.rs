@@ -10,12 +10,12 @@ fn main() {
     let first_number = first.parse::<f32>().unwrap();
     let second_number = second.parse::<f32>().unwrap();
 
-    let result = operatate(operator, first_number, second_number);
+    let result = operate(operator, first_number, second_number);
 
     println!("{:?}", output(first_number, operator, second_number, result));
 }
 
-fn operatate(operator: char, first_number: f32, second_number: f32) -> f32 {
+fn operate(operator: char, first_number: f32, second_number: f32) -> f32 {
      match operator {
           '+' => first_number + second_number,
           '-' => first_number - second_number,
